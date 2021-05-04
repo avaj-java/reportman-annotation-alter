@@ -60,10 +60,7 @@ repositories {
 
 dependencies {
 
-//    compile ( (rootProject?.findProject('common-util')) ? project(':common-util') : 'com.github.avaj-java:common-util:0.3.7.2' )
-
-    //SLF4j
-//    compile 'org.slf4j:slf4j-api:1.7.7'
+    compile ( (rootProject?.findProject('common-util')) ? project(':common-util') : 'com.github.avaj-java:common-util:0.3.7.2' )
 
     //POI
     compile 'org.apache.poi:poi:3.9'
