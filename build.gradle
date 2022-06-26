@@ -4,7 +4,7 @@ apply plugin: 'groovy'
 apply plugin: 'java'
 apply plugin: 'idea'
 
-sourceCompatibility = JavaVersion.VERSION_1_6
+sourceCompatibility = JavaVersion.VERSION_1_8
 
 [compileJava, compileGroovy, compileTestJava, compileTestGroovy]*.options*.encoding = 'UTF-8'
 
@@ -62,7 +62,7 @@ String coreBasePath = project.hasProperty("coreBasePath") ? project.getProperty(
 
 dependencies {
 
-    compile ( (rootProject?.findProject("${coreBasePath}:common-util")) ? project(":${coreBasePath}:common-util") : 'com.github.avaj-java:common-util:0.4.1' )
+    compile ( (rootProject?.findProject("${coreBasePath}:common-util")) ? project(":${coreBasePath}:common-util") : 'com.github.avaj-java:common-util:0.4.2' )
 
     //POI
     compile 'org.apache.poi:poi:3.9'
